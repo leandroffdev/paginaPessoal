@@ -17,107 +17,184 @@
         <header class="header">
             <nav class="nav">
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="#intro">home</a></li>
-                    <li class="nav-item"><a href="#about">about</a></li>
-                    <li class="nav-item"><a href="#experience">experience</a></li>
-                    <li class="nav-item"><a href="#education">education</a></li>
-                    <li class="nav-item"><a href="#portfolio">portfolio</a></li>
-                    <li class="nav-item"><a href="#skills">skills</a></li>
-                    <li class="nav-item"><a href="#contact">contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#intro">introdução</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">experiência</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">educação</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portifolio">portifólio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">contato</a></li>
                 </ul>
             </nav>
-            <article class="intro">
-                <h1 class="intro-title">Leandro França</h1>
-                <p class="intro-subtitle">I'm a <span class="intro-text-highlight">Frontend Developer</span></p>
-                <p class="intro-text">
-                    Bem-vindo ao meu site! Sou um profissional de frontend apaixonado 
-                    por criar interfaces incríveis e funcionais para a web. 
-                    Aqui você pode conferir alguns dos meus projetos e entrar em 
-                    contato comigo para discutirmos como posso ajudar no seu próximo projeto.
-                </p>
-                <div class="intro-buttons">
-                    <a href="#contact" class="intro-contact">contact me</a>
-                    <a href="https://github.com/leandroffdev" class="github">github</a>
-                    <a href="https://www.linkedin.com/in/leandroffdev/" class="linkedin">linkedin</a>
-                </div>
-                <div class="intro-qrcode">
-                    qrcode
-                </div>
-            </article>
         </header>
     </div>
     <div class="main-bg">
         <main class="main">
-            <section class="about" id="about">
-                <h2 class="about-title">about me</h2>
-                <p class="about-text">
-                    Meu nome é Leandro Florêncio de França, profissional de frontend 
-                    apaixonado por programação. Com habilidades em HTML, CSS, JavaScript 
-                    e outras linguagens de programação, estou sempre pronto para enfrentar 
-                    desafios e encontrar soluções criativas. Tenho orgulho de dizer que 
-                    minha paixão por programação tem sido um diferencial em cada projeto 
-                    que participei. Meu objetivo é criar experiências de usuário incríveis, 
-                    que sejam não apenas bonitas, mas também funcionais e intuitivas. 
-                    Ao navegar pelo meu site, você encontrará exemplos dos meus projetos 
-                    mais recentes, que mostram como minha paixão se reflete em minha 
-                    abordagem ao desenvolvimento de interfaces para a web. Se você 
-                    tem um projeto desafiador que precisa de uma solução criativa, 
-                    estou pronto para ajudá-lo(a). Vamos conversar e encontrar a melhor 
-                    solução para as suas necessidades.
-                </p>
-            </section>
-            <section class="experience">
-                <h2 class="experience-title">experience</h2>
-                <div class="experience-item">
-                    <h3 class="experience-item-title">Frontend Developer</h3>
-                    <h4 class="experience-item-subtitle">Empresa</h4>
-                    <p class="experience-item-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            <div class="intro-bg">
+                <article id="intro" class="intro">
+                    <div class="intro-info">
+                        <h1 class="intro-title">Leandro Florêncio de França</h1>
+                        <p class="intro-subtitle"><span class="intro-subtitle-highlight">Frontend Developer</span></p>
+                        <p class="intro-text">
+                            Bem-vindo ao meu site! Sou um profissional de frontend apaixonado 
+                            por criar interfaces incríveis e funcionais para a web. 
+                            Aqui você pode conferir alguns dos meus projetos e entrar em 
+                            contato comigo para discutirmos como posso ajudar no seu próximo projeto.
+                        </p>
+                        <div class="intro-buttons">
+                            <a href="#contact" class="intro-contact">contact me</a>
+                            <a href="https://github.com/leandroffdev" class="intro-github">
+                                <svg width="32px" height="32px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g id="Page-1" stroke="none" stroke-width="1">
+                                        <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)">
+                                            <g id="icons" transform="translate(56.000000, 160.000000)">
+                                                <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399"></path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/leandroffdev/" class="intro-linkedin">
+                                <svg fill="#000000" height="32px" width="32px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-143 145 512 512" xml:space="preserve">
+                                <path d="M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M41.4,508.1H-8.5V348.4h49.9
+                                    V508.1z M15.1,328.4h-0.4c-18.1,0-29.8-12.2-29.8-27.7c0-15.8,12.1-27.7,30.5-27.7c18.4,0,29.7,11.9,30.1,27.7
+                                    C45.6,316.1,33.9,328.4,15.1,328.4z M241,508.1h-56.6v-82.6c0-21.6-8.8-36.4-28.3-36.4c-14.9,0-23.2,10-27,19.6
+                                    c-1.4,3.4-1.2,8.2-1.2,13.1v86.3H71.8c0,0,0.7-146.4,0-159.7h56.1v25.1c3.3-11,21.2-26.6,49.8-26.6c35.5,0,63.3,23,63.3,72.4V508.1z
+                                    "/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="intro-qrcode">
+                            qrcode
+                        </div>
+                    </div>
+                    <img class="intro-img" src="#" alt="Foto Leandro">
+                </article>
+            </div>
+            <div class="about-bg">
+                <section class="about" id="about">
+                    <h2 class="about-title">about me</h2>
+                    <p class="about-text">
+                        Meu nome é Leandro França, profissional de frontend 
+                        apaixonado por programação. Com habilidades em HTML, CSS, JavaScript 
+                        e outras linguagens de programação, estou sempre pronto para enfrentar 
+                        desafios e encontrar soluções criativas. Tenho orgulho de dizer que 
+                        minha paixão por programação tem sido um diferencial em cada projeto 
+                        que participei. Meu objetivo é criar experiências de usuário incríveis, 
+                        que sejam não apenas bonitas, mas também funcionais e intuitivas. 
+                        Ao navegar pelo meu site, você encontrará exemplos dos meus projetos 
+                        mais recentes, que mostram como minha paixão se reflete em minha 
+                        abordagem ao desenvolvimento de interfaces para a web. Se você 
+                        tem um projeto desafiador que precisa de uma solução criativa, 
+                        estou pronto para ajudá-lo(a). Vamos conversar e encontrar a melhor 
+                        solução para as suas necessidades.
                     </p>
-                </div>
-                <div class="experience-item">
-                    <h3 class="experience-item-title">Frontend Developer</h3>
-                    <h4 class="experience-item-subtitle">Empresa</h4>
-                    <p class="experience-item-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
-                </div>
-            </section>
-            <section class="education">
-                <h2 class="education-title">education</h2>
-                <div class="education-university">
-                    <h3 class="education-university-title">University</h3>
-                </div>
-                <div class="education-course">
-                    <h3 class="education-course-title">Course</h3>
-                </div>
-                <div class="education-bootcamp">
-                    <h3 class="education-bootcamp-title">Bootcamp</h3>
-                </div>
-                <div class="education-idiom">
-                    <h3 class="education-idiom-title">Idiom</h3>
-                </div>
-            </section>
-            <section class="portfolio">
-                <h2 class="portfolio-title">portfolio</h2>
-                <div class="portfolio-frontend">frontend</div>
-                <div class="portfolio-frontend">backend</div>
-            </section>
-            <section class="skills">
-                <h2 class="skills-title">skills</h2>
-                <div class="hardskills">
-                    <h3 class="hardskills-title">hard skills</h3>
-                </div>
-                <div class="softskills">
-                    <h3 class="softskills-title">soft skills</h3>
-                </div>
-            </section>
+                </section>
+            </div>
+            <div class="experience-bg">
+                <section id="experience" class="experience">
+                    <h2 class="experience-title">experience</h2>
+                    <div class="experience-item">
+                        <h3 class="experience-item-title">Frontend Developer</h3>
+                        <h4 class="experience-item-subtitle">Empresa</h4>
+                        <p class="experience-item-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                    </div>
+                    <div class="experience-item">
+                        <h3 class="experience-item-title">Frontend Developer</h3>
+                        <h4 class="experience-item-subtitle">Empresa</h4>
+                        <p class="experience-item-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                    </div>
+                </section>
+            </div>
+            <div class="education-bg">
+                <section id="education" class="education">
+                    <h2 class="education-title">education</h2>
+                    <div class="education-university">
+                        <h3 class="education-university-title">University</h3>
+                    </div>
+                    <div class="education-course">
+                        <h3 class="education-course-title">Course</h3>
+                    </div>
+                    <div class="education-bootcamp">
+                        <h3 class="education-bootcamp-title">Bootcamp</h3>
+                    </div>
+                    <div class="education-idiom">
+                        <h3 class="education-idiom-title">Idiom</h3>
+                    </div>
+                </section>
+            </div>
+            <div class="portifolio-bg">
+                <section id="portifolio" class="portifolio">
+                    <h2 class="portifolio-title">portfolio</h2>
+                    <div class="portifolio-frontend">frontend</div>
+                    <div class="portifolio-frontend">backend</div>
+                </section>
+            </div>
+            <div class="skills-bg">
+                <section id="skills" class="skills">
+                    <h2 class="skills-title">skills</h2>
+                    <div class="hardskills">
+                        <h3 class="hardskills-title">hard skills</h3>
+                    </div>
+                    <div class="softskills">
+                        <h3 class="softskills-title">soft skills</h3>
+                    </div>
+                </section>
+            </div>
         </main>
     </div>
     <div class="footer-bg">
-        <footer class="footer">
-            
+        <footer id="contact" class="footer">
+            <div class="footer-info">
+                <h1 class="footer-title">Leandro Florêncio de França</h1>
+                <p class="footer-subtitle">I'm a <span class="footer-subtitle-highlight">Frontend Developer</span></p>
+                <div class="footer-buttons">
+                    <a href="#contact" class="footer-contact">contact me</a>
+                    <a href="https://github.com/leandroffdev" class="footer-github">
+                        <svg width="32px" height="32px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="Page-1" stroke="none" stroke-width="1">
+                                <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)">
+                                    <g id="icons" transform="translate(56.000000, 160.000000)">
+                                        <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/leandroffdev/" class="footer-linkedin">
+                        <svg fill="#000000" height="32px" width="32px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-143 145 512 512" xml:space="preserve">
+                        <path d="M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M41.4,508.1H-8.5V348.4h49.9
+                            V508.1z M15.1,328.4h-0.4c-18.1,0-29.8-12.2-29.8-27.7c0-15.8,12.1-27.7,30.5-27.7c18.4,0,29.7,11.9,30.1,27.7
+                            C45.6,316.1,33.9,328.4,15.1,328.4z M241,508.1h-56.6v-82.6c0-21.6-8.8-36.4-28.3-36.4c-14.9,0-23.2,10-27,19.6
+                            c-1.4,3.4-1.2,8.2-1.2,13.1v86.3H71.8c0,0,0.7-146.4,0-159.7h56.1v25.1c3.3-11,21.2-26.6,49.8-26.6c35.5,0,63.3,23,63.3,72.4V508.1z
+                            "/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="footer-qrcode">
+                    qrcode
+                </div>
+            </div>
+            <form class="footer-form" action="">
+                <h2 class="form-title">Contato</h2>
+                <label for="name">Nome</label>
+                <input id="name" name="name" type="text" placeholder="Nome">
+                <label for="email">E-mail</label>
+                <input id="email" name="email" type="email" placeholder="email@email.com">
+                <label for="message">Mensagem</label>
+                <textarea name="message" id="message" placeholder="Mensagem"></textarea>
+                <input class="form-btn" type="submit" value="Enviar">
+            </form>
         </footer>
+    </div>
+    <div class="copy-bg">
+        <div class="copy">
+            <p>Leandro França. Todos os direitos reservados.</p>
+        </div>
     </div>
 </body>
 </html>
