@@ -32,7 +32,7 @@ body {
 .footer,
 .copy {
   margin: auto;
-  max-width: 1600px;
+  max-width: 1400px;
 }
 /* Header */
 .header-bg {
@@ -98,6 +98,7 @@ body {
 .main .intro-text,
 .main .about-text,
 .main .experience-text,
+.main .experience-item-text,
 .main .education-text,
 .main .portifolio-text,
 .main .skills-text {
@@ -131,6 +132,32 @@ body {
 }
 .main .intro-img {
   place-self: end;
+}
+/* Specialist */
+.main .specialist-bg {
+  width: 100%;
+  padding: 32px;
+}
+.main .specialist {
+  width: 100%;
+  padding-top: 32px;
+
+}
+.main .specialist-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  width: 100%;
+  margin: auto;
+}
+.main .specialist-item {}
+.main .specialist-item svg {
+  width: 50px;
 }
 /* About */
 .main .about-bg {
@@ -201,13 +228,6 @@ body {
   align-items: center;
   gap: 20px;
 }
-.footer-buttons .footer-contact {
-  padding: 8px 16px;
-  background-color: var(--primary-bg);
-  color: var(--tertiary-text);
-  border-radius: 4px;
-  text-transform: uppercase;
-}
 .footer-buttons .footer-github svg {}
 .footer-buttons .footer-linkedin svg {
   fill: var(--primary-btn);
@@ -248,6 +268,13 @@ body {
 }
 
 @media (max-width: 800px) {
+  .header .nav {
+    height: 48px;
+    background-color: black;
+  }
+  .header .nav-list {
+    display: none;
+  }
   .main .intro-bg {
     position: relative;
   }
@@ -278,6 +305,9 @@ body {
   }
   .main .intro-qrcode {
     display: none;
+  }
+  .main .specialist-item svg {
+    width: 30px;
   }
   .footer {
     grid-template-columns: repeat(1, 1fr);
