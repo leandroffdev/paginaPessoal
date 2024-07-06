@@ -25,7 +25,6 @@ a {
 }
 body {
   width: 100%;
-  background: linear-gradient(45deg, rgb(102, 102, 102), grey);
 }
 .header,
 .main,
@@ -54,6 +53,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 8px;
+  margin-top: 32px;
 }
 .header .nav-item {}
 .header .nav-link {
@@ -126,8 +126,9 @@ body {
   fill: var(--primary-btn);
 }
 .main .intro-qrcode {
-  width: 160px;
-  height: 160px;
+  border-radius: 4px;
+  width: 100px;
+  height: 100px;
   background-color: var(--primary-bg);
 }
 .main .intro-img {
@@ -136,7 +137,6 @@ body {
 /* Specialist */
 .main .specialist-bg {
   width: 100%;
-  padding: 32px;
 }
 .main .specialist {
   width: 100%;
@@ -166,7 +166,6 @@ body {
 }
 .main .about {
   width: 100%;
-  padding-top: 32px;
 }
 .main .about-title,
 .main .experience-title,
@@ -174,8 +173,7 @@ body {
 .main .portifolio-title,
 .main .skills-title {
   font-size: 2rem;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
 }
 .main .about-text {
   color: var(--secondary-text);}
@@ -184,6 +182,7 @@ body {
   width: 100%;
   padding: 32px;
 }
+.main .experience {}
 .main .education-bg {
   width: 100%;
   padding: 32px;
@@ -233,8 +232,9 @@ body {
   fill: var(--primary-btn);
 }
 .footer-qrcode {
-  width: 160px;
-  height: 160px;
+  border-radius: 4px;
+  width: 100px;
+  height: 100px;
   background-color: var(--primary-bg);
 }
 .footer-form {
@@ -279,11 +279,12 @@ body {
     position: relative;
   }
   .main .intro-bg::after {
+    border-radius: 4px;
     content: '';
     display: block;
     position: absolute;
-    width: 160px;
-    height: 160px;
+    width: 100px;
+    height: 100px;
     background-color: black;
     transform: translateY(-50%);
   }
