@@ -182,7 +182,64 @@ body {
   width: 100%;
   padding: 32px;
 }
-.main .experience {}
+.main .experience {
+  display: grid;
+}
+.main .experience-title {}
+.main .experience-text {
+  margin-bottom: 32px;
+  max-width: 72ch;
+  place-self: end;
+}
+.main .experience-item {
+  place-self: end;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  background-color: #faf9f9;
+}
+.main .experience-item:before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: -6px;
+  width: 6px;
+  height: 24px;
+  border-radius: 2px 0 0 2px;
+  background-color: var(--primary-btn);
+}
+.main .experience-item-time {
+  position: absolute;
+  top: 24px;
+  left: -100px;
+  color: #525252;
+  font-size: 0.875rem;
+  width: 80px;
+  text-align: right;
+}
+.main .experience-item-business {}
+.main .experience-item-title {}
+.main .experience-item-text {
+  max-width: 32ch;
+}
+.main .experience-item-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.main .experience-item-skills li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 4px;
+  background-color: #fff;
+}
+.main .experience-item-place {}
 .main .education-bg {
   width: 100%;
   padding: 32px;
@@ -310,13 +367,29 @@ body {
   .main .specialist-item svg {
     width: 30px;
   }
+  .main .experience-item-time {
+    /* display: none; */
+    position: absolute;
+    bottom: 20px;
+    right: 24px;
+    left: auto;
+    top: auto;
+    color: #525252;
+    font-size: 0.875rem;
+    width: 80px;
+    text-align: right;
+  }
   .footer {
     grid-template-columns: repeat(1, 1fr);
     gap: 32px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .header {}
   .main {}
+  .main .experience-item {
+    grid-template-columns: repeat(1, 1fr);
+    place-self: stretch;
+  }
   .footer {}
 }
