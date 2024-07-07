@@ -1,7 +1,7 @@
 /* Variables */
 :root {
   --primary-text: blue;
-  --secondary-text: #d4d4d4;
+  --secondary-text: #858383;
   --tertiary-text: white;
   --primary-bg: black;
   --secondary-bg: rgb(14, 14, 14);
@@ -176,7 +176,8 @@ body {
   margin-bottom: 32px;
 }
 .main .about-text {
-  color: var(--secondary-text);}
+  color: var(--secondary-text);
+}
 /* Experience */
 .main .experience-bg {
   width: 100%;
@@ -230,14 +231,16 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  max-width: 304px;
 }
 .main .experience-item-skills li {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px 20px;
   border-radius: 4px;
-  background-color: #fff;
+}
+.main .experience-item-skills li svg {
+  fill: grey;
 }
 .main .experience-item-place {}
 .main .education-bg {
@@ -252,6 +255,111 @@ body {
   width: 100%;
   padding: 32px;
 }
+.main .education-bg {
+  /* background-color: #141414; */
+}
+.main .education {}
+.main .education-title {}
+.main .education-text {
+  margin-bottom: 32px;
+}
+.main .education-university {}
+.main .education-university-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  margin-bottom: 32px;
+}
+.main .education-university-title {
+  margin-bottom: 32px;
+}
+.main .education-university-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  height: 160px;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: #faf9f9;
+}
+.main .education-university-item:before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: -6px;
+  width: 6px;
+  height: 24px;
+  border-radius: 2px 0 0 2px;
+  background-color: var(--primary-btn);
+}
+.main .education-university-item-title {
+  text-transform: uppercase;
+}
+.main .education-university-item-title,
+.main .education-university-item-course,
+.main .education-university-item-institution {
+  display: flex;
+  justify-content: space-between;
+}
+.main .education-university-item-time {
+  font-size: .8rem;
+  padding: 4px;
+}
+.main .education-course {}
+.main .education-course-title {
+  margin-bottom: 32px;
+}
+.main .education-course-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  margin-bottom: 32px;
+}
+.main .education-course-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+  background-color: #faf9f9;
+}
+.main .education-course-item:before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: -6px;
+  width: 6px;
+  height: 24px;
+  border-radius: 2px 0 0 2px;
+  background-color: var(--primary-btn);
+}
+.main .education-course-item-institution {
+  text-transform: uppercase;
+}
+.main .education-course-item-title {}
+.main .education-course-item-time {}
+.main .education-idiom {}
+.main .education-idiom-title {
+  margin-bottom: 32px;
+}
+.main .education-idiom-list {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 20px;
+}
+.main .education-idiom-item {
+  position: relative;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #faf9f9;
+}
+.main .education-idiom-item-flag {}
+.main .education-idiom-item-title {}
+.main .education-idiom-item-proficience {}
 /* Footer */
 .footer-bg {
   width: 100%;
@@ -324,6 +432,18 @@ body {
   padding: 20px;
 }
 
+@media (max-width: 1200px) {
+  .main .education-university-list,
+  .main .education-course-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 1000px) {
+  .main .education-university-list,
+  .main .education-course-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 @media (max-width: 800px) {
   .header .nav {
     height: 48px;
@@ -379,6 +499,10 @@ body {
     width: 80px;
     text-align: right;
   }
+  .main .education-university-list,
+  .main .education-course-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .footer {
     grid-template-columns: repeat(1, 1fr);
     gap: 32px;
@@ -390,6 +514,25 @@ body {
   .main .experience-item {
     grid-template-columns: repeat(1, 1fr);
     place-self: stretch;
+  }
+  .main .education-universities {
+    justify-content: stretch;
+  }
+  .main .education-university-item {
+    /* max-width: 250px; */
+  }
+  .main .education-university-item-title {
+    max-width: none;
+  }
+  .main .education-university-item-course {
+    max-width: none;
+  }
+  .main .education-university-item-institution {
+    max-width: none;
+  }
+  .main .education-university-list,
+  .main .education-course-list {
+    grid-template-columns: repeat(1, 1fr);
   }
   .footer {}
 }
