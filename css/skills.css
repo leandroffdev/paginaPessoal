@@ -1,0 +1,16 @@
+.hardskills-item {
+    fill: grey;
+    width: fit-content;
+}
+.softskills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.softskills-item {
+    flex-grow: 1;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: rgb(226, 226, 226);
+}

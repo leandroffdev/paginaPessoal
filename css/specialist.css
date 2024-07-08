@@ -1,0 +1,27 @@
+.main .specialist-bg {
+  width: 100%;
+}
+.main .specialist {
+  width: 100%;
+  padding-top: 32px;
+}
+.main .specialist-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  width: 100%;
+  margin: auto;
+}
+.specialist-item svg {
+  width: 50px;
+}
+@media (max-width: 400px) {
+  .specialist-item svg {
+    width: 40px;
+  }
+}

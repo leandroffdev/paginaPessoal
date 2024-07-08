@@ -1,0 +1,11 @@
+:root {
+    --primary-text: blue;
+    --secondary-text: #858383;
+    --tertiary-text: white;
+    --primary-bg: black;
+    --secondary-bg: rgb(14, 14, 14);
+    --tertiary-bg: white;
+    --primary-btn: blue;
+    --secondary-btn: black;
+    --tertiary-btn: white;
+  }
