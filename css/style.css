@@ -21,6 +21,7 @@
   font-size: 2rem;
   margin-bottom: 32px;
   grid-column: 1 / -1;
+  font-family: Poppins;
 }
 .section-title:after {}
 .section-text {
@@ -39,6 +40,7 @@
   font-weight: bold;
   font-size: 8rem;
   grid-column: 1;
+  font-family: Poppins;
 }
 .section-list {
   display: grid;
@@ -47,6 +49,7 @@
 }
 .subsection-title {
   margin-bottom: 20px;
+  font-family: Poppins;
 }
 .subsection-list {
   display: grid;

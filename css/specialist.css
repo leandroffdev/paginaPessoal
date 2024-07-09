@@ -1,9 +1,10 @@
 .main .specialist-bg {
   width: 100%;
+  padding: 20px;
 }
 .main .specialist {
   width: 100%;
-  padding-top: 32px;
+  /* padding-top: 32px; */
 }
 .main .specialist-list {
   display: flex;
@@ -19,6 +20,11 @@
 }
 .specialist-item svg {
   width: 50px;
+}
+@media (max-width: 500px) {
+  .main .specialist {
+    padding-top: 0px;
+  }
 }
 @media (max-width: 400px) {
   .specialist-item svg {

@@ -6,6 +6,7 @@
 }
 .education-university-title {
   margin-bottom: 32px;
+  font-family: Poppins;
 }
 .education-university-item {
   position: relative;
@@ -30,6 +31,7 @@
 }
 .education-university-item-title {
   text-transform: uppercase;
+  font-family: Poppins;
 }
 .education-university-item-time {
   position: absolute;
@@ -43,6 +45,7 @@
 /* courses */
 .education-course-title {
   margin-bottom: 32px;
+  font-family: Poppins;
 }
 .education-course-list {
   display: grid;
@@ -74,6 +77,7 @@
 /* Idiom */
 .education-idiom-title {
   margin-bottom: 32px;
+  font-family: Poppins;
 }
 .education-idiom-list {
   display: grid;
@@ -98,6 +102,9 @@
   height: 24px;
   border-radius: 2px 0 0 2px;
   background-color: grey;
+}
+.education-idiom-item-title {
+  font-family: Poppins;
 }
 @media (max-width: 1200px) {}
 @media (max-width: 1000px) {

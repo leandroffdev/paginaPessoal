@@ -17,6 +17,9 @@
   border-radius: 2px 0 0 2px;
   background-color: var(--primary-btn);
 }
+.experience-item-business {
+  font-family: Poppins;
+}
 .experience-item-time {
   position: absolute;
   top: 24px;

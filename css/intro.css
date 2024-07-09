@@ -17,14 +17,17 @@
   gap: 20px;
 }
 .intro-title {
+  font-family: Poppins;
   font-size: 3rem;
 }
 .intro-subtitle {
   font-size: 1.5rem;
   color: var(--secondary-text);
+  font-family: Poppins;
 }
 .intro-subtitle-highlight {
   color: var(--primary-text);
+  font-family: Poppins;
 }
 .intro-buttons {
   display: flex;
@@ -39,6 +42,7 @@
   color: var(--tertiary-text);
   border-radius: 4px;
   text-transform: uppercase;
+  font-family: Poppins;
 }
 .intro-github svg {
   fill: var(--secondary-btn);
@@ -59,16 +63,6 @@
   .intro-bg {
     position: relative;
   }
-  .intro-bg::after {
-    border-radius: 4px;
-    content: '';
-    display: block;
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background-color: black;
-    transform: translateY(-50%);
-  }
   .intro {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -85,7 +79,12 @@
     height: 450px;
     place-self: end;
   }
-  .intro-qrcode {
+}
+@media (max-width: 500px) {
+  .intro-info {
+    position: relative;
+  }
+  .intro-img {
     display: none;
   }
 }

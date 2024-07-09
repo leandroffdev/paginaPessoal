@@ -15,12 +15,15 @@
   }
   .footer-title {
     font-size: 2rem;
+    font-family: Poppins;
   }
   .footer-subtitle {
     font-size: 1.5rem;
+    font-family: Poppins;
   }
   .footer-subtitle-highlight {
     color: var(--primary-text);
+    font-family: Poppins;
   }
   .footer-buttons {
     display: flex;
@@ -28,6 +31,7 @@
     justify-content: start;
     align-items: center;
     gap: 20px;
+    font-family: Poppins;
   }
   .footer-buttons .footer-linkedin svg {
     fill: var(--primary-btn);
@@ -44,11 +48,21 @@
     flex-direction: column;
     gap: 16px;
   }
+  .form-title {
+    font-family: Poppins;
+  }
+  .footer-form label {
+    font-family: Poppins;
+  }
   .footer-form input,
   .footer-form textarea {
     padding: 16px;
-    border: none;
+    border: 1px solid grey;
     border-radius: 4px;
+  }
+  .footer-form input:focus,
+  .footer-form textarea:focus {
+    outline: 2px solid blue;
   }
   .footer-form textarea {
     height: 200px;
@@ -57,13 +71,11 @@
   .footer-form .form-btn {
     background-color: var(--primary-btn);
     color: var(--tertiary-btn);
+    font-family: Poppins;
   }
-  @media (max-width: 1200px) {}
-  @media (max-width: 1000px) {}
   @media (max-width: 800px) {
     .footer {
       grid-template-columns: repeat(1, 1fr);
       gap: 32px;
     }
   }
-  @media (max-width: 600px) {}
