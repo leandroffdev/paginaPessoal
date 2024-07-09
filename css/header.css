@@ -12,6 +12,18 @@
   justify-content: center;
   align-items: center;
 }
+.header .nav .menu-mobile {
+  display: none;
+  padding: 8px;
+  margin-right: 32px;
+}
+.active {
+  display: flex !important;
+}
+.header .nav .menu-mobile:hover {
+  cursor: pointer;
+  scale: 1.1;
+}
 .header .nav-list {
   display: flex;
   flex-wrap: wrap;
@@ -27,7 +39,22 @@
 }
 @media (max-width: 800px) {
   .header .nav {
+    display: flex;
+    justify-content: end;
     height: 48px;
+  }
+  .header .nav .menu-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 32px;
+  }
+  .header .nav .menu-mobile div {
+    border-radius: 4px;
+    width: 32px;
+    height: 4px;
     background-color: black;
   }
   .header .nav-list {

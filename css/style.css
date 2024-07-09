@@ -19,11 +19,9 @@
 }
 .section-title {
   font-size: 2rem;
-  margin-bottom: 32px;
   grid-column: 1 / -1;
   font-family: Poppins;
 }
-.section-title:after {}
 .section-text {
   margin-right: 20px;
   color: var(--secondary-text);
@@ -53,7 +51,7 @@
 }
 .subsection-list {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(9, 1fr);
   gap: 20px;
 }
 .header,
@@ -73,7 +71,7 @@
 }
 @media (max-width: 1200px) {
   .subsection-list {
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(8, 1fr);
   }
 }
 @media (max-width: 1000px) {
@@ -81,7 +79,7 @@
     font-size: 6rem;
   }
   .subsection-list {
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(7, 1fr);
   }
 }
 @media (max-width: 800px) {
@@ -89,7 +87,7 @@
     font-size: 5rem;
   }
   .subsection-list {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
   }
 }
 @media (max-width: 600px) {
@@ -105,17 +103,9 @@
   .section-list {
     grid-column: auto;
   }
-  .subsection-list {
-    grid-template-columns: repeat(6, 1fr);
-  }
 }
 @media (max-width: 500px) {
   .subsection-list {
     grid-template-columns: repeat(5, 1fr);
-  }
-}
-@media (max-width: 400px) {
-  .subsection-list {
-    grid-template-columns: repeat(4, 1fr);
   }
 }

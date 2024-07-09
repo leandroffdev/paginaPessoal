@@ -1,3 +1,6 @@
 .about {
   width: 100%;
 }
+#about .section-text {
+  grid-column: 1 / -1;
+}
