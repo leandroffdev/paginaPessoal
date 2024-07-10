@@ -93,16 +93,6 @@
   padding: 20px;
   background-color: #faf9f9;
 }
-/* .education-idiom-item:before {
-  content: "";
-  position: absolute;
-  top: 20px;
-  left: -6px;
-  width: 6px;
-  height: 24px;
-  border-radius: 2px 0 0 2px;
-  background-color: blue;
-} */
 .education-idiom-item-title {
   font-family: Poppins;
 }
@@ -115,7 +105,7 @@
 }
 @media (max-width: 800px) {
   .education-university-list,
-  .main .education-course-list {
+  .education-course-list {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -133,7 +123,8 @@
 }
 @media (max-width: 500px) {
   .education-university-list,
-  .education-course-list{
+  .education-course-list,
+  .education-idiom-list{
     grid-template-columns: 1fr;
   }
 }

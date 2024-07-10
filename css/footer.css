@@ -77,7 +77,6 @@
     animation-duration: .5s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: inherit;
-    animation-timeline: view();
   }
   .footer-form input,
   .footer-form textarea {
@@ -88,7 +87,6 @@
     animation-duration: .5s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: inherit;
-    animation-timeline: view();
   }
   .footer-form input:focus,
   .footer-form textarea:focus {
@@ -101,7 +99,6 @@
     animation-duration: .5s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: inherit;
-    animation-timeline: view();
   }
   .footer-form .form-btn {
     background-color: var(--primary-btn);
