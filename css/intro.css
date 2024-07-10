@@ -78,12 +78,15 @@
 }
 .intro-img {
   place-self: end;
-  width: 100%;
-  height: 100%;
+  width: 400px;
+  margin-right: 32px;
   animation-name: appear;
   animation-duration: .4s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: inherit;
+}
+.intro-img img {
+  width: 100%;
 }
 @media (max-width: 800px) {
   .intro-bg {
@@ -92,8 +95,10 @@
   .intro {
     grid-template-columns: repeat(1, 1fr);
   }
-  .intro-info {
+  .intro-img {
     position: absolute;
+    z-index: -1;
+    width: 300px;
   }
   .intro-title {
     font-size: 2.5rem;
@@ -102,16 +107,17 @@
     max-width: 40ch;
   }
   .intro-img {
-    height: 450px;
     place-self: end;
+  }
+}
+@media (max-width: 700px) {
+  .intro-img {
+    display: none;
   }
 }
 @media (max-width: 500px) {
   .intro-info {
     position: relative;
-  }
-  .intro-img {
-    display: none;
   }
 }
 @media (max-width: 350px) {
