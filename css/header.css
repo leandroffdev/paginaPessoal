@@ -6,8 +6,8 @@
   width: 100%;
 }
 .header .nav {
+  position: relative;
   width: 100%;
-  line-height: 32px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,9 +33,13 @@
   margin-top: 32px;
 }
 .header .nav-link {
-  padding: 8px 16px;
+  padding: 8px 8px;
   color: var(--secondary-text);
   font-family: Poppins;
+  animation-name: appear;
+  animation-duration: .5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: inherit;
 }
 @media (max-width: 800px) {
   .header .nav {
@@ -58,8 +62,20 @@
     background-color: black;
   }
   .header .nav-list {
+    z-index: 2;
+    position: absolute;
+    top: 32px;
     display: none;
+    flex-direction: column;
+    gap: 1px;
+    background-color: #ffffff;
   }
-}
-@media (max-width: 600px) {
+  .header .nav-link {
+    display: block;
+    text-transform: uppercase;
+    background-color: grey;
+    color: #ffffff;
+    line-height: 32px;
+    width: 200px;
+  }
 }

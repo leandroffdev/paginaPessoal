@@ -1,5 +1,6 @@
 @import url('./reset.css');
 @import url('./variables.css');
+@import url('./animations.css');
 @import url('./header.css');
 @import url('./main.css');
 @import url('./intro.css');
@@ -12,6 +13,9 @@
 @import url('./footer.css');
 @import url('./copy.css');
 
+html {
+  scroll-behavior: smooth;
+}
 .section {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -21,11 +25,20 @@
   font-size: 2rem;
   grid-column: 1 / -1;
   font-family: Poppins;
+  animation-name: appear;
+  animation-duration: .5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: inherit;
+  animation-timeline: view();
 }
 .section-text {
   margin-right: 20px;
   color: var(--secondary-text);
   grid-column: 2;
+  animation-name: appear;
+  animation-duration: .5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: inherit;
 }
 .section-bg {
   display: grid;
@@ -39,20 +52,38 @@
   font-size: 8rem;
   grid-column: 1;
   font-family: Poppins;
+  animation-name: appear;
+  animation-duration: .5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: inherit;
+  animation-timeline: view();
 }
 .section-list {
   display: grid;
   gap: 20px;
   grid-column: 2;
+  animation-name: appear;
+  animation-duration: .5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: inherit;
+  animation-timeline: view();
 }
 .subsection-title {
   margin-bottom: 20px;
   font-family: Poppins;
+  animation-name: appear;
+  animation-duration: .7s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: inherit;
 }
 .subsection-list {
   display: grid;
   grid-template-columns: repeat(9, 1fr);
   gap: 20px;
+  animation-name: appear;
+  animation-duration: .7s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: inherit;
 }
 .header,
 .main,

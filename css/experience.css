@@ -6,6 +6,12 @@
   padding: 20px;
   border-radius: 4px;
   background-color: #faf9f9;
+  
+  animation-name: appear;
+  animation-duration: .5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: inherit;
+  animation-timeline: view();
 }
 .experience-item:before {
   content: "";
@@ -37,6 +43,11 @@
   flex-wrap: wrap;
   gap: 20px;
   max-width: 304px;
+  animation-name: appear;
+  animation-duration: .5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: inherit;
+  animation-timeline: view();
 }
 .experience-item-skills li {
   display: flex;

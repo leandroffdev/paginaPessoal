@@ -19,15 +19,27 @@
 .intro-title {
   font-family: Poppins;
   font-size: 3rem;
+  animation-name: appear;
+  animation-duration: .5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: inherit;
 }
 .intro-subtitle {
   font-size: 1.5rem;
   color: var(--secondary-text);
   font-family: Poppins;
+  animation-name: appear;
+  animation-duration: .6s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: inherit;
 }
 .intro-subtitle-highlight {
   color: var(--primary-text);
   font-family: Poppins;
+  animation-name: appear;
+  animation-duration: .7s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: inherit;
 }
 .intro-buttons {
   display: flex;
@@ -35,6 +47,10 @@
   justify-content: start;
   align-items: center;
   gap: 20px;
+  animation-name: appear;
+  animation-duration: .8s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: inherit;
 }
 .intro-contact {
   padding: 8px 16px;
@@ -55,9 +71,19 @@
   width: 100px;
   height: 100px;
   background-color: var(--primary-bg);
+  animation-name: appear;
+  animation-duration: .9s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: inherit;
 }
 .intro-img {
   place-self: end;
+  width: 100%;
+  height: 100%;
+  animation-name: appear;
+  animation-duration: .4s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: inherit;
 }
 @media (max-width: 800px) {
   .intro-bg {

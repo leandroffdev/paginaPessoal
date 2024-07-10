@@ -16,14 +16,29 @@
   .footer-title {
     font-size: 2rem;
     font-family: Poppins;
+    animation-name: appear;
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: inherit;
+    animation-timeline: view();
   }
   .footer-subtitle {
     font-size: 1.5rem;
     font-family: Poppins;
+    animation-name: appear;
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: inherit;
+    animation-timeline: view();
   }
   .footer-subtitle-highlight {
     color: var(--primary-text);
     font-family: Poppins;
+    animation-name: appear;
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: inherit;
+    animation-timeline: view();
   }
   .footer-buttons {
     display: flex;
@@ -32,6 +47,11 @@
     align-items: center;
     gap: 20px;
     font-family: Poppins;
+    animation-name: appear;
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: inherit;
+    animation-timeline: view();
   }
   .footer-buttons .footer-linkedin svg {
     fill: var(--primary-btn);
@@ -53,12 +73,22 @@
   }
   .footer-form label {
     font-family: Poppins;
+    animation-name: appear;
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: inherit;
+    animation-timeline: view();
   }
   .footer-form input,
   .footer-form textarea {
     padding: 16px;
     border: 1px solid grey;
     border-radius: 4px;
+    animation-name: appear;
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: inherit;
+    animation-timeline: view();
   }
   .footer-form input:focus,
   .footer-form textarea:focus {
@@ -67,11 +97,22 @@
   .footer-form textarea {
     height: 200px;
     resize: none;
+    animation-name: appear;
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: inherit;
+    animation-timeline: view();
   }
   .footer-form .form-btn {
     background-color: var(--primary-btn);
     color: var(--tertiary-btn);
     font-family: Poppins;
+    padding: 16px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .footer-form .form-btn[disabled] {
+    opacity: .4;
   }
   @media (max-width: 800px) {
     .footer {
