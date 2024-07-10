@@ -122,9 +122,7 @@
   }
 }
 @media (max-width: 500px) {
-  .education-university-list,
-  .education-course-list,
-  .education-idiom-list{
+  .education-university-list{
     grid-template-columns: 1fr;
   }
 }
